@@ -1,0 +1,84 @@
+body{
+	position:relative;
+	width:50%;
+	background-image: url("../images/background.jpg");
+}
+
+div .centre{
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid #3B2F20;
+	background-color: #493A27;
+	color:#c7cab8;
+	font-size:12px;
+}
+
+.center-me { 
+    position: relative;
+    top: 30px;
+    transform: translateX(50%);
+	height:100%;
+    /* prefixes needed for cross-browser support 
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);*/
+}
+
+table{
+	width:100%;
+	background-color: #493A27;
+	color:#c7cab8;
+	table-layout: fixed;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.left{
+	width:25px;
+}
+
+.bottom{
+	width:60%;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+input[type="text"]{
+	height:10px;
+	width:4em;
+}
+
+button:focus {outline:0;}
+
+
+div#vindictus a:hover, div#vindictus ul li.active a { background: #493A27; }
+
+/*Override TAB CSS*/
+.ui-tabs-nav {
+	background-color: #493A27;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #303030;
+}
+
+.ui-tabs-nav a:focus{
+	background-color: #493A27;
+	outline:0;
+}
+
+
+.ui-tabs-nav a:visited{
+	background-color: #493A27;
+}
+.ui-tabs .ui-tabs-nav li {
+    position: relative;    /*To overwrite jquery-ui.css*/
+    top: 0px !important;  /*To overwrite jquery-ui.css*/
+    border: 1px solid #303030;
+	border-bottom: none;
+	margin: 0 0 -5px 0;
+    background-color: #493A27;
+}
+.ui-tabs-anchor{
+    color: #c7cab8 !important;                  /*To overwrite jquery-ui.css*/
+	background-color: #3B2D1D;
+}
+

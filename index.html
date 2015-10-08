@@ -6,29 +6,49 @@
 	<script type="text/javascript" src="./Js/jquery-2.1.4.js"></script>
 	<script type="text/javascript" src="./Js/jquery-ui.js"></script>
 	<link rel="stylesheet" href="./Style/jquery-ui.css" />
+	<link rel="stylesheet" href="./Style/style.css" />
 	<title></title>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$("#vindictus").tabs();
 		$("#equipment").tabs();
+		$("#shield").tabs();
+		
+		$("li").click(function(){
+			$(this).parent().addClass('active');
+		});
 	});
 	</script>
 </head>
 <body>
-	<div id="vindictus">
-		<ul>
-			<li><a href="./weapon.html">武器</a></li>
-			<li><a href="#equipment">防具</a>
-			</li>
-		</ul>
-		<div id="equipment">
+	<!--div style="position:relative; width:100%;">
+		<img src="http://static.nexon.co.jp/heroes/index/bg_index_150916.jpg" width="100%" height="" alt="" />
+	</div-->
+	
+	<div class="center-me">
+		<div class="centre" id="vindictus">
 			<ul>
-					<li><a href="./helm.html">ヘルム</a></li>
-					<li><a href="./armor.html">アーマー</a></li>
-					<li><a href="./pant.html">パンツ</a></li>
-					<li><a href="./glove.html">グローブ</a></li>
-					<li><a href="./boot.html">ブーツ</a></li>
+				<li><a href="./weapon.html">武器</a></li>
+				<li><a href="#equipment">防具</a>
+				</li>
+			</ul>
+			<div class="centre" id="equipment">
+				<ul>
+					<li><a href="./equipment.php?mode=helm">ヘルム</a></li>
+					<li><a href="./equipment.php?mode=armor">アーマー</a></li>
+					<li><a href="./equipment.php?mode=pant">パンツ</a></li>
+					<li><a href="./equipment.php?mode=glove">グローブ</a></li>
+					<li><a href="./equipment.php?mode=boot">ブーツ</a></li>
+					<li><a href="#shield">シールド</a></li>
 				</ul>
+				<div class="centre" id="shield">
+					<ul>
+						<li><a href="./equipment.php?mode=small">スモールシールド</a></li>
+						<li><a href="./equipment.php?mode=large">ラージシールド</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
+	</div>
 </body>
 </html>

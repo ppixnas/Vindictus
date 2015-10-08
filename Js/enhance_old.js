@@ -249,27 +249,6 @@ function calculate(quality, enhance, atk, matk, balance, critical, spd, power, a
 		+ "&ensp;" + damagePlus + "力+" + power + "&ensp;" + "敏捷+" + agility + "&ensp;" + "知能+" + intel 
 		+ "&ensp;" + "意志+" + will;
 	}*/
-	dummyAtk = document.getElementById("dummyAtk").value;
-	dummyMatk = document.getElementById("dummyMatk").value;
-	dummySpd = document.getElementById("dummySpd").value;
-	dummyBalance = document.getElementById("dummyBalance").value;
-	dummyCritical = document.getElementById("dummyCritical").value;
-	dummyPower = document.getElementById("dummyPower").value;
-	dummyAgility = document.getElementById("dummyAgility").value;
-	dummyWill = document.getElementById("dummyWill").value;
-	dummyIntel = document.getElementById("dummyIntel").value;
-	dummyPlusDamage = document.getElementById("dummyPlusDamage").value;
-	
-	/*
-	if(atk < dummyAtk ){
-		atkColor = "<span style='color:Red'>";
-	}
-	if(atk > dummyAtk){
-		atkColor = "<span style='color:Yellow'>";
-	}*/
-	
-	
-	
 	
 	if(isNaN(atk)|| isNaN(matk)|| isNaN(spd)|| isNaN(balance)|| isNaN(critical)
 	|| isNaN(power)|| isNaN(agility)|| isNaN(will)|| isNaN(intel)){
@@ -286,17 +265,6 @@ function calculate(quality, enhance, atk, matk, balance, critical, spd, power, a
 		+ "&ensp;" + damagePlus + "力+" + power + "&ensp;" + "敏捷+" + agility + "&ensp;" + "知能+" + intel 
 		+ "&ensp;" + "意志+" + will;
 	}
-	
-	document.getElementById("dummyAtk").value = atk;
-	document.getElementById("dummyMatk").value = matk;
-	document.getElementById("dummySpd").value = spd;
-	document.getElementById("dummyBalance").value = balance;
-	document.getElementById("dummyCritical").value = critical;
-	document.getElementById("dummyPower").value = power;
-	document.getElementById("dummyAgility").value = agility;
-	document.getElementById("dummyWill").value = will;
-	document.getElementById("dummyIntel").value = intel;
-	document.getElementById("dummyPlusDamage").value = plusDamage;
 }
 
 

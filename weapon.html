@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<script type="text/javascript" src="./Js/enhance.js"></script>
@@ -37,104 +37,102 @@
 </head>
 <body>
 <form action="" method="post">
+	<div>
 	<table>
 		<tr>
-			<td>
-				<image src="./images/レジーナの封印された力：武器.png" title="レジーナの封印された力：武器" onclick="openStatus('1');"/>
+			<td class="left">
+				<image src="./images/1.png" title="レジーナの封印された力：武器"/>
 			</td>
 			<td>
-				攻撃力<input type="text" id="atk1" onkeypress='return numeric(event);' size="2"/>
-				魔法攻撃力<input type="text" id="Matk1" onkeypress='return numeric(event);' size="2"/>
-				攻撃速度<input type="text" id="spd1" onkeypress='return numeric(event);' size="2"/>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<image src="./images/鋭利な伝承石の破片.png" title="鋭利な伝承石の破片" onclick="openStatus();"/>
-			</td>
-			<td>
-				バランス<input type="text" id="balance1" pattern="[0-9]" onkeypress='return numeric(event);' size="2"/>
-				クリティカル<input type="text" id="critical1" onkeypress='return numeric(event);' size="2"/>
+				攻撃力<input type="text" id="atk1" onkeypress='return numeric(event);' />
+				魔法攻撃力<input type="text" id="Matk1" onkeypress='return numeric(event);' />
+				攻撃速度<input type="text" id="spd1" onkeypress='return numeric(event);' />
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<image src="./images/安定した伝承石の破片.png" title="安定した伝承石の破片" onclick="openStatus();"/>
+			<td class="left">
+				<image src="./images/2.png" title="鋭利な伝承石の破片" />
 			</td>
 			<td>
-				バランス<input type="text" id="balance2" onkeypress='return numeric(event);' size="2"/>
-				力<input type="text" id="power1" onkeypress='return numeric(event);' size="2"/>
-				敏捷<input type="text" id="agility1" onkeypress='return numeric(event);' size="2"/>
-				知能<input type="text" id="intel1" onkeypress='return numeric(event);' size="2"/>
-				意志<input type="text" id="will1" onkeypress='return numeric(event);' size="2"/>
+				バランス<input type="text" id="balance1" onkeypress='return numeric(event);' />
+				クリティカル<input type="text" id="critical1" onkeypress='return numeric(event);' />
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<image src="./images/軽い伝承石の破片.png" title="軽い伝承石の破片" onclick="openStatus();"/>
+			<td class="left">
+				<image src="./images/3.png" title="安定した伝承石の破片"/>
 			</td>
 			<td>
-				クリティカル<input type="text" id="critical2" onkeypress='return numeric(event);' size="2"/>
-				攻撃速度<input type="text" id="spd2" onkeypress='return numeric(event);' size="2"/>
+				バランス<input type="text" id="balance2" onkeypress='return numeric(event);' />
+				力<input type="text" id="power1" onkeypress='return numeric(event);' />
+				敏捷<input type="text" id="agility1" onkeypress='return numeric(event);' />
+				知能<input type="text" id="intel1" onkeypress='return numeric(event);' />
+				意志<input type="text" id="will1" onkeypress='return numeric(event);' />
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<image src="./images/綺麗な伝承石の破片.png" title="綺麗な伝承石の破片" onclick="openStatus();"/>
+			<td class="left">
+				<image src="./images/4.png" title="軽い伝承石の破片" />
 			</td>
 			<td>
-				攻撃力<input type="text" id="atk2" onkeypress='return numeric(event);' size="2"/>
-				魔法攻撃力<input type="text" id="Matk2" onkeypress='return numeric(event);' size="2"/>
-				力<input type="text" id="power2" onkeypress='return numeric(event);' size="2"/>
-				敏捷<input type="text" id="agility2" onkeypress='return numeric(event);' size="2"/>
-				知能<input type="text" id="intel2" onkeypress='return numeric(event);' size="2"/>
-				意志<input type="text" id="will2" onkeypress='return numeric(event);' size="2"/>
+				クリティカル<input type="text" id="critical2" onkeypress='return numeric(event);' />
+				攻撃速度<input type="text" id="spd2" onkeypress='return numeric(event);' />
 			</td>
+		</tr>
+		<tr>
+			<td class="left">
+				<image src="./images/5.png" title="綺麗な伝承石の破片" />
+			</td>
+			<td>
+				攻撃力<input type="text" id="atk2" onkeypress='return numeric(event);' />
+				魔法攻撃力<input type="text" id="Matk2" onkeypress='return numeric(event);' />
+				力<input type="text" id="power2" onkeypress='return numeric(event);' />
+				敏捷<input type="text" id="agility2" onkeypress='return numeric(event);' />
+				知能<input type="text" id="intel2" onkeypress='return numeric(event);' />
+				意志<input type="text" id="will2" onkeypress='return numeric(event);' />
+			</td>
+		</tr>
+		<tr>
+			<td class="left"></td>
+			<td>品質:
+				<select name="quality" id="quality">
+					<option value=1>★</option>
+					<option value=2 selected>★★</option>
+					<option value=3>★★★</option>
+					<option value=4>★★★★</option>
+					<option value=5>★★★★★</option>
+				</select>
+				強化値:
+				<select name="enhance" id="enhance">
+					<option value=0 selected>なし</option>
+					<option value=1>+1</option>
+					<option value=2>+2</option>
+					<option value=3>+3</option>
+					<option value=4>+4</option>
+					<option value=5>+5</option>
+					<option value=6>+6</option>
+					<option value=7>+7</option>
+					<option value=8>+8</option>
+					<option value=9>+9</option>
+					<option value=10>+10</option>
+					<option value=11>+11</option>
+					<option value=12>+12</option>
+					<option value=13>+13</option>
+					<option value=14>+14</option>
+					<option value=15>+15</option>
+				</select>
+				<input type="button" id="calculate" value="CALCULATE"/>
+				<!--input type="reset" id="reset" value="RESET"/-->
+			</td>
+		</tr>
+		<tr>
+		<td class="left">→</td>
+		<td id="statusDiv"></td>
 		</tr>
 	</table>
-	<div id="enhancement">
-	<table style="width:100%">
-		<tr>
-		<td width="25%">
-		品質:
-		<!--select name="quality" id="quality" onchange="addition();"-->
-		<select name="quality" id="quality">
-			<option value=1>1</option>
-			<option value=2 selected>2</option>
-			<option value=3>3</option>
-			<option value=4>4</option>
-			<option value=5>5</option>
-		</select>★
-		</td>
-		<td width="75%">
-		強化値:
-		<!--select name="enhance" id="enhance" onchange="addition();"-->
-		<select name="enhance" id="enhance">
-			<option value=0 selected>なし</option>
-			<option value=1>+1</option>
-			<option value=2>+2</option>
-			<option value=3>+3</option>
-			<option value=4>+4</option>
-			<option value=5>+5</option>
-			<option value=6>+6</option>
-			<option value=7>+7</option>
-			<option value=8>+8</option>
-			<option value=9>+9</option>
-			<option value=10>+10</option>
-			<option value=11>+11</option>
-			<option value=12>+12</option>
-			<option value=13>+13</option>
-			<option value=14>+14</option>
-			<option value=15>+15</option>
-		</select>
-			<!--input type="button" value="calculate" onclick="addition();"/-->
-			<input type="button" id="calculate" value="calculate"/>
-		</td>
-		</tr>
-	</table>
-	<div id="statusDiv">
 	</div>
-	</div>
+<!--div class="bottom" id="statusDiv"></div-->
+		
 	<input type="hidden" id="dummyAtk" value="" />
 	<input type="hidden" id="dummyMatk" value="" />
 	<input type="hidden" id="dummySpd" value="" />
